@@ -1,0 +1,25 @@
+React app : https://www.youtube.com/watch?v=1eO_hNYzaSc 
+React + AWS: https://www.youtube.com/watch?v=JgwI22y_eFA https://www.freecodecamp.org/news/ultimate-guide-to-aws-amplify-and-reacxt/ 
+
+Basic App: Till 9th May
+
+Home Page
+    - Name Of App
+    - What is collection.track?
+    - How to use?
+
+Lists
+    - ReadList
+    - Now Reading
+    - Completed
+    - Borrowed books
+    - Lent books
+
+Navbar
+    - Lists
+    - Favorite
+    - All books
+    - Add a book
+
+
+
