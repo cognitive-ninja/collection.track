@@ -7,20 +7,20 @@ export const Header = () => {
       <div className="container">
         <div className="inner-content">
           <div className="brand">
-            <Link to="/">collection.track</Link>
+            <Link to="/collection.track/">collection.track</Link>
           </div>
 
           <ul className="nav-links">
             <li>
-              <Link to="/book/readlist">Read List</Link>
+              <Link to="/collection.track/book/readlist">Read List</Link>
             </li>
 
             <li>
-              <Link to="/book/completed">Completed Books</Link>
+              <Link to="/collection.track/book/completed">Completed Books</Link>
             </li>
 
             <li>
-              <Link to="/add" className="btn btn-main">
+              <Link to="/collection.track/add" className="btn btn-main">
                 + Add
               </Link>
             </li>

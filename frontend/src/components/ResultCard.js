@@ -36,8 +36,8 @@ export const ResultCard = ({ book }) => {
 
       <div className="info">
         <div className="header">
-          <h3 className="title">{book.volumeInfo.title}</h3>
-          <h4 className="authors">{book.volumeInfo.authors}</h4>
+          <h3 className="title" style={{fontWeight:"bold", fontFamily:"Montserrat"}}>{book.volumeInfo.title}</h3>
+          <p className="authors" style={{marginTop: "-0.4px",fontSize:"medium",fontWeight:"light", fontFamily:"Montserrat"}}>{book.volumeInfo.authors}</p>
         
         </div>
 

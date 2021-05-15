@@ -15,16 +15,16 @@ function App() {
       <Router>
         <Header/>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/collection.track">
             <Home />
           </Route>
-          <Route exact path="/book/readlist">
+          <Route exact path="/collection.track/book/readlist">
             <Readlist />
           </Route>
-          <Route path="/add">
+          <Route path="/collection.track/add">
             <Add />
           </Route>
-          <Route path="/book/completed">
+          <Route path="/collection.track/book/completed">
             <Completed />
           </Route>
         </Switch>
