@@ -21,5 +21,9 @@ Navbar
     - All books
     - Add a book
 
+npm install gh-pages --save-dev
+Add "homepage":"<github-hosted-site-url>" to package.json
+Add "predeploy": "npm run build",
+    "deploy": "gh-pages -d build", in scripts of package.json
 
 
