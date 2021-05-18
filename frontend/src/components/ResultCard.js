@@ -6,6 +6,8 @@ export const ResultCard = ({ book }) => {
   const {
     addItemToReadlist,
     addItemToCompleted,
+    addItemToBorrowed,
+    addItemToLent,
     readlist,
     completed,
   } = useContext(GlobalContext);
@@ -36,11 +38,21 @@ export const ResultCard = ({ book }) => {
 
       <div className="info">
         <div className="header">
-          <h3 className="title" style={{fontWeight:"bold", fontFamily:"Montserrat"}}>{book.volumeInfo.title}</h3>
+          <div style={{display: 'flex', justifyContent:"space-between"}}>
+            <h3 className="title" style={{fontWeight:"bold", fontFamily:"Montserrat"}}>{book.volumeInfo.title}</h3>
+            <div class="dropdown">
+              <i class="fas fa-ellipsis-v"></i>
+              <div class="dropdown-content">
+                <button class="btn" onClick={() => addItemToBorrowed(book)}>Borrow</button>
+                <button class="btn" onClick={() => addItemToLent(book)}>Lend</button>
+              </div>
+            </div>
+            
+          </div>
           <p className="authors" style={{marginTop: "-0.4px",fontSize:"medium",fontWeight:"light", fontFamily:"Montserrat"}}>{book.volumeInfo.authors}</p>
         
         </div>
-
+        
         <div className="controls">
           <button
             className="btn"

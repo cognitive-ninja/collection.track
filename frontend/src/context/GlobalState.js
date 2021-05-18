@@ -9,6 +9,12 @@ const initialState = {
   completed: localStorage.getItem("completed")
     ? JSON.parse(localStorage.getItem("completed"))
     : [],
+  borrowed: localStorage.getItem("borrowed")
+    ? JSON.parse(localStorage.getItem("borrowed"))
+    : [],
+  lent: localStorage.getItem("lent")
+    ? JSON.parse(localStorage.getItem("lent"))
+    : [],
 };
 
 // create context
@@ -21,6 +27,8 @@ export const GlobalProvider = (props) => {
   useEffect(() => {
     localStorage.setItem("readlist", JSON.stringify(state.readlist));
     localStorage.setItem("completed", JSON.stringify(state.completed));
+    localStorage.setItem("borrowed", JSON.stringify(state.borrowed));
+    localStorage.setItem("lent", JSON.stringify(state.lent));
   }, [state]);
 
   // actions
@@ -36,12 +44,28 @@ export const GlobalProvider = (props) => {
     dispatch({ type: "ADD_ITEM_TO_COMPLETED", payload: book });
   };
 
+  const removeFromCompleted = (id) => {
+    dispatch({ type: "REMOVE_FROM_COMPLETED", payload: id });
+  };
+  
   const moveToReadlist = (book) => {
     dispatch({ type: "MOVE_TO_READLIST", payload: book });
   };
 
-  const removeFromCompleted = (id) => {
-    dispatch({ type: "REMOVE_FROM_COMPLETED", payload: id });
+  const addItemToBorrowed = (book) => {
+    dispatch({ type: "ADD_ITEM_TO_BORROWED", payload: book });
+  };
+
+  const removeItemFromBorrowed = (id) => {
+    dispatch({ type: "REMOVE_ITEM_FROM_BORROWED", payload: id });
+  };
+
+  const addItemToLent = (book) => {
+    dispatch({ type: "ADD_ITEM_TO_LENT", payload: book });
+  };
+
+  const removeItemFromLent = (id) => {
+    dispatch({ type: "REMOVE_ITEM_FROM_LENT", payload: id });
   };
 
   return (
@@ -49,11 +73,17 @@ export const GlobalProvider = (props) => {
       value={{
         readlist: state.readlist,
         completed: state.completed,
+        borrowed: state.borrowed,
+        lent: state.lent,
         addItemToReadlist,
         removeItemFromReadlist,
         addItemToCompleted,
-        moveToReadlist,
         removeFromCompleted,
+        moveToReadlist,
+        addItemToBorrowed,
+        removeItemFromBorrowed,
+        addItemToLent,
+        removeItemFromLent,
       }}
     >
       {props.children}

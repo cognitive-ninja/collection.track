@@ -8,6 +8,8 @@ import { Home } from "./components/Home";
 import "./App.css";
 import "./lib/font-awesome/css/all.min.css";
 import { GlobalProvider } from "./context/GlobalState";
+import { Borrowed } from "./components/Borrowed";
+import { Lent } from "./components/Lent";
 
 function App() {
   return (
@@ -26,6 +28,12 @@ function App() {
           </Route>
           <Route path="/collection.track/book/completed">
             <Completed />
+          </Route>
+          <Route path="/collection.track/book/borrowed">
+            <Borrowed />
+          </Route>
+          <Route path="/collection.track/book/lent">
+            <Lent />
           </Route>
         </Switch>
       </Router>
