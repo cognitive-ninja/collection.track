@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/collection.track/static/css/main.8975c07b.chunk.css",
-    "main.js": "/collection.track/static/js/main.179f5231.chunk.js",
-    "main.js.map": "/collection.track/static/js/main.179f5231.chunk.js.map",
+    "main.css": "/collection.track/static/css/main.ca61fd06.chunk.css",
+    "main.js": "/collection.track/static/js/main.16b16f4a.chunk.js",
+    "main.js.map": "/collection.track/static/js/main.16b16f4a.chunk.js.map",
     "runtime-main.js": "/collection.track/static/js/runtime-main.bfab1e25.js",
     "runtime-main.js.map": "/collection.track/static/js/runtime-main.bfab1e25.js.map",
     "static/js/2.44cc9f2f.chunk.js": "/collection.track/static/js/2.44cc9f2f.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.6c35ac1f.chunk.js": "/collection.track/static/js/3.6c35ac1f.chunk.js",
     "static/js/3.6c35ac1f.chunk.js.map": "/collection.track/static/js/3.6c35ac1f.chunk.js.map",
     "index.html": "/collection.track/index.html",
-    "static/css/main.8975c07b.chunk.css.map": "/collection.track/static/css/main.8975c07b.chunk.css.map",
+    "static/css/main.ca61fd06.chunk.css.map": "/collection.track/static/css/main.ca61fd06.chunk.css.map",
     "static/js/2.44cc9f2f.chunk.js.LICENSE.txt": "/collection.track/static/js/2.44cc9f2f.chunk.js.LICENSE.txt",
     "static/media/default-book.8a72aa60.jpg": "/collection.track/static/media/default-book.8a72aa60.jpg",
     "static/media/all.min.css": "/collection.track/static/media/fa-solid-900.a940d584.woff",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.bfab1e25.js",
     "static/js/2.44cc9f2f.chunk.js",
-    "static/css/main.8975c07b.chunk.css",
-    "static/js/main.179f5231.chunk.js"
+    "static/css/main.ca61fd06.chunk.css",
+    "static/js/main.16b16f4a.chunk.js"
   ]
 }
