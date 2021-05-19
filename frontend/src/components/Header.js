@@ -18,12 +18,12 @@ export const Header = () => {
             <Link to="/collection.track/">collection.track</Link>
           </div>
           {/* <div> */}
-            <a href="/collection.track/book/borrowed">Borrowed Books</a>
-            <a href="/collection.track/book/lent">Lent Books</a>
-            <a href="/collection.track/book/readlist">Read List</a>
-            <a href="/collection.track/book/completed">Completed Books</a>
+            <Link to="/collection.track/book/borrowed">Borrowed Books</Link>
+            <Link to="/collection.track/book/lent">Lent Books</Link>
+            <Link to="/collection.track/book/readlist">Read List</Link>
+            <Link to="/collection.track/book/completed">Completed Books</Link>
             <button className="btn btn-main" style={{padding:"0px", margin:"10px"}}>
-              <a href="/collection.track/add" style={{padding:"10px 16px"}}>+ Add</a>
+              <Link to="/collection.track/add" style={{padding:"10px 16px"}}>+ Add</Link>
             </button>
           <button class="icon" onClick={funcResponsive} style={{padding: "14px 16px", color:"white", backgroundColor:"black", border:"0", fontSize:"large"}}>
             <i class="fa fa-bars"></i>
