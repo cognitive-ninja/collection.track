@@ -109,6 +109,9 @@ body {
 } */
 
 @media (min-width: 200px) {
+  .home{
+    height: calc(100vh - 200px);
+  }
   .container {
     padding: 0;
     margin: 0;
@@ -136,6 +139,9 @@ body {
   }
 }
 @media (min-width: 768px) {
+  .home{
+    height: calc(100vh - 145px);
+  }
   .container {
     width: 750px;
   }
@@ -160,6 +166,9 @@ body {
 }
 
 @media (min-width: 992px) {
+  .home{
+    height: calc(100vh - 90px);
+  }
   .container {
     width: 970px;
     padding-right: 15px;
