@@ -45,7 +45,7 @@ export const ItemControls = ({ type, book }) => {
 
       {type === "borrowed" && (
         <>
-          <h1 classname="ctrl-btn" style={{color:"white", fontSize:"medium"}}>From Modi</h1>
+          <h1 classname="ctrl-btn" style={{color:"white", fontSize:"medium"}}>From ___</h1>
           <button
             className="ctrl-btn"
             onClick={() => removeItemFromBorrowed(book.id)}
@@ -59,7 +59,7 @@ export const ItemControls = ({ type, book }) => {
       {type === "lent" && (
         <>
          
-          <h1 style={{color:"white", fontSize:"medium"}}>To Modi</h1>
+          <h1 style={{color:"white", fontSize:"medium"}}>To ___</h1>
           <button
             className="ctrl-btn"
             onClick={() => removeItemFromLent(book.id)}
