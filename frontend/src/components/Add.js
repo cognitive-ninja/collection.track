@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { ResultCard } from "./ResultCard";
+require('dotenv').config();
 
 export const Add = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
-
+  const apiKey = process.env.REACT_APP_API_KEY;
   const onChange = (e) => {
     e.preventDefault();
 
@@ -12,7 +13,7 @@ export const Add = () => {
 
     //store key in env variable
     fetch(
-      `https://www.googleapis.com/books/v1/volumes?q=${e.target.value}&key=AIzaSyBP6kQshfh4ObS90hsqpMO5ng2GwDBsszM&maxResults=40`
+      `https://www.googleapis.com/books/v1/volumes?q=${e.target.value}&key=${apiKey}&maxResults=40`
     )
       .then((res) => res.json())
       .then((data) => {
