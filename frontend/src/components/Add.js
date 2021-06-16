@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { ResultCard } from "./ResultCard";
-require('dotenv').config();
 
 export const Add = () => {
   const [query, setQuery] = useState("");
