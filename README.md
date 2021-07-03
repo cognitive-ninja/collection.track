@@ -21,8 +21,8 @@ Technical Details:
 <hr/>
 
 Future Work: 
-- Adding functionality to save who borrowed your which book.
-- Adding functionality to save you lent which book and from whom.
-- Start to track movies by providing features like watchlist, favourite movies, completed movies etc.
+- To add functionality to save who borrowed your which book.
+- To add functionality to save which book you have lent and from whom.
+- To track movies by providing features like watchlist, favourite movies, completed movies etc.
 
 
