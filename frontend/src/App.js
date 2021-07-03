@@ -17,22 +17,22 @@ function App() {
       <Router>
         <Header/>
         <Switch>
-          <Route exact path="/collection.track">
+          <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/collection.track/book/readlist">
+          <Route exact path="/book/readlist">
             <Readlist />
           </Route>
-          <Route path="/collection.track/add">
+          <Route path="/add">
             <Add />
           </Route>
-          <Route path="/collection.track/book/completed">
+          <Route path="/book/completed">
             <Completed />
           </Route>
-          <Route path="/collection.track/book/borrowed">
+          <Route path="/book/borrowed">
             <Borrowed />
           </Route>
-          <Route path="/collection.track/book/lent">
+          <Route path="/book/lent">
             <Lent />
           </Route>
         </Switch>

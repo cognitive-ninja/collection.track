@@ -1,6 +1,5 @@
 {
-  "homepage": "http://congitive-ninja.github.io/collection.track/",
-  "name": "frontend",
+  "name": "collection.track",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
